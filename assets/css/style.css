@@ -70,6 +70,9 @@ h2{
 h4{
   font-size: 1em;
 }
+.skills h4{
+  text-align: center;
+}
 .leading{
   font-size: 2em;
   padding: 4em;
@@ -102,9 +105,14 @@ nav{
  
 }
 .site-nav ul{
-  display: none;
+  display: none;s
 } 
 
+#contact p{
+  font-size: 2em;
+  padding: 1em;
+  color: var(--gold);
+}
 /* Styling for aside section utilizing grid display*/
 /* Note: I tried adding a background image here.  It worked on my pc but would work when attmpting to go live.  
 My tutor attempted it also and with all of our research and colaboration, still could not figure it out */
@@ -195,8 +203,8 @@ Utilizing variables defined at begining of style sheet */
   text-align: center;
 }
 #contact form{
-  width: 80%;
-  max-width: 400px;
+  width: 88%;
+  max-width: 450px;
   margin: 20px auto;
   text-align: center;
 }

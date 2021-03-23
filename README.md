@@ -8,8 +8,8 @@ You will be viewing my personal portfolio. It is intended to provide you links a
 
 The following steps will be required to be performed to view the portfolio. No installation is required other than your browser of choice.
 
-- Open browser of choice and navigat to https://al-moreno.github.io/Updated-Portfolio/
-- To view code on github navigate to https://github.com/al-moreno/Updated-Portfolio
+- Open browser of choice and navigat to https://al-moreno.github.io/Ana-Moreno-Portfolio/
+- To view code on github navigate to https://github.com/al-moreno/Ana-Moreno-Portfolio
 
 ## Usage
 
