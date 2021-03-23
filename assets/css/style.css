@@ -1,0 +1,296 @@
+/* CSS styling will begin with a mobile first approach
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default
+
+/*variables defining colors and background images */
+:root{
+  --black: #000000; 
+  --white: #E8E8E8;
+  --gold: #C6AD8F;
+  --dark_green: #425665;
+}
+/* Additonal Reset to browser default settings */
+
+body, p, a, ul, li{
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+
+/* Basic Style for site to begin CSS styleing  
+Utilizing variables defined at begining of style sheet*/
+body{
+  background: var(--white);
+  overflow-x: hidden;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button{
+  background:var(--white); 
+  border: 2px solid var(--dark_orange);
+  color:var(--dark_orange);
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  box-shadow: 1px 2px 3px var(--dark_gray);
+  display: inline-block;
+}
+/* Hover effect for button to enhance expereience */
+
+.button:hover{
+  color: var(--dark_green);
+  background: var(--gold);
+  border: 2px solid var(--white);
+}
+input, textarea{
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: 2px solid var(--gold);
+  color: var(--dark_green);
+}
+
+h1, h2, h3, h4{
+  color: var(--gold);
+  font-weight: normal;
+}
+
+p, a, li{
+  color: var(--dark_green);
+}
+
+/* Define font size for page*/
+ h1, h3{
+   font-size: 1.2em;
+ }
+h2{
+  font-size: 1.6em;
+}
+h4{
+  font-size: 1em;
+}
+.leading{
+  font-size: 2em;
+  padding: 4em;
+}
+
+/*Difine display for class grid as a grid display */
+.grid{ 
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  gap: 10px;
+}
+/*Header styling */
+header{
+  background-color:var(--dark_green);
+  padding: 2em;
+}
+header h1{
+  grid-column: 1/5;
+  grid-row: 1;
+  padding-bottom: .2em;
+  border-bottom: 2px solid var(--gold);
+}
+header h2{
+  grid-column: 1/9;
+  padding-top:.5em;
+}
+/* Nav styling. Note: nav is not set up as grid display */
+nav{
+  display: none;
+ 
+}
+.site-nav ul{
+  display: none;
+} 
+
+/* Styling for aside section utilizing grid display*/
+/* Note: I tried adding a background image here.  It worked on my pc but would work when attmpting to go live.  
+My tutor attempted it also and with all of our research and colaboration, still could not figure it out */
+#welcome{
+  background-image: url("../images/pexels-stephan-seeber-1054222.jpg");
+  background-position: center;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.welcome-text {
+  grid-column: 1/8;
+}
+/*Portfolio styling with flexbox 
+Utilizing variables defined at begining of style sheet as well as grid definded in body styling*/
+#portfolio{
+  background-color: var(--dark_green);
+  padding: 30px 20px;
+}
+#portfolio h3{
+  margin-bottom: 0;
+  grid-column: 1/9;
+  text-align: center;
+  padding-bottom: 1em;
+}
+.projects {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.projects a *{
+   padding: 1em;  
+}
+/* Skills styling
+Utilizing variables defined at begining of style sheet as well as grid definded in body styling*/
+/* #skills {
+  background-color: var(--white);
+  padding:30px 20px;
+}
+ 
+#skills h3{
+  margin-bottom: 0;
+  grid-column: 1/9;
+  text-align: center;
+  padding-bottom: 1em;
+  color: var(--dark_green);
+}
+.skills a{
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em;
+}
+.skills h4{
+  color: var(--dark_green);
+} */
+#skills{
+  background-color: white;
+  padding: 30px 20px;
+}
+#skills h3{
+  margin-bottom: 0;
+  grid-column: 1/9;
+  text-align: center;
+  padding-bottom: 1em;
+}
+.skills {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.skills a *{
+  padding: 2em;  
+}
+/*Contact styling 
+Utilizing variables defined at begining of style sheet */
+#contact{
+  padding: 20px 20px;
+  background-color: var(--dark_green) ;
+}
+#contact h3, #contact p{
+  text-align: center;
+}
+#contact form{
+  width: 80%;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+#contact input, #contact textarea{
+  width: 100%;
+  margin: 5px 0;
+}
+/* Footer Styling
+Utilizing variables defined at begining of style sheet as well as grid definded in body styling*/
+footer{
+  padding: 30px 20px;
+  background-color: var(--light_orange);
+}
+footer .copyright{
+  grid-column: 1/4;
+  font-size: .8em;
+}
+footer .social{
+  grid-column: 7/9;
+  display: flex;
+  justify-content: flex-end;
+}
+footer li{
+  margin: 0 6px;
+}
+footer img{
+  width: 20px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) { 
+
+  body{
+    font-size: 17px;
+  } 
+  #skills h3{
+    margin-bottom: 0;
+    grid-column: 1/9;
+    text-align: center;
+    padding-bottom: 1em;
+  }
+  .skills {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .projects a *{
+    padding: 1em; 
+  }
+  
+}
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) { 
+  
+  body{
+    font-size: 18px;
+  }
+  #welcome{
+  padding: 6em;
+  
+  }
+  nav{
+    display:flex;
+    background-color: white;
+    padding: 2em;
+    color: var(--gold)
+  }
+  .site-nav ul{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    flex-grow:1; 
+    
+  } 
+ 
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) { 
+
+  body{
+    font-size: 19px;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) { 
+
+  body{
+    font-size: 20px;
+  }
+  .leading{
+    font-size: 3em;
+    text-align:end
+  }
+}
