@@ -19,8 +19,7 @@ You may find my current portfolio website helpful when attempting to find out wh
 
 ![picture](./assets/images/view_code.png)
 
-
-
+![picture](./assets/images/picture.png)
 Alternativly you may open my code for review with VSCode.
 
 https://github.com/al-moreno/portfolio/index.html
