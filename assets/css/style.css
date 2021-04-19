@@ -7,8 +7,8 @@ No media query since this is the default
 :root{
   --black: #000000; 
   --white: #E8E8E8;
-  --gold: #C6AD8F;
-  --dark_green: #425665;
+  --gold: #ca823e;
+  --dark_green: #32389e;
 }
 /* Additonal Reset to browser default settings */
 
@@ -117,7 +117,7 @@ nav{
 /* Note: I tried adding a background image here.  It worked on my pc but would work when attmpting to go live.  
 My tutor attempted it also and with all of our research and colaboration, still could not figure it out */
 #welcome{
-  background-image: url("../images/pexels-stephan-seeber-1054222.jpg");
+  background-image: url("../images/pexels-thisisengineering-3861969.jpg");
   background-position: center;
   height: 500px;
   background-repeat: no-repeat;
