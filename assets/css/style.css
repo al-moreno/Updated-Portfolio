@@ -146,6 +146,7 @@ Utilizing variables defined at begining of style sheet as well as grid definded 
   justify-content: center;
   
 }
+
 .projects a *{
    padding: 1em;  
 }
